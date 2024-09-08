@@ -45,7 +45,6 @@ int check_word(char *word) {
     Elem_palavras temp = head;
 
     while (temp != NULL) {
-        // For case-insensitive comparison, use strcasecmp
         if (strcmp(temp->name, word) == 0) {
             temp->occurrences++;
             return temp->occurrences;
